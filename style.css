@@ -1,3 +1,187 @@
+/* Import Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Default Presets + Font*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Misc CSS (Sorted Alphabetically; Only Class Selectors Used)*/
+
+.blue {
+    color: #186c8d;
+    line-height: 1;
+}
+
+.cta {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-right: 3rem;
+}
+
+.flex {
+    display: flex;
+    background-color: transparent;
+}
+
+.headline {
+    line-height: 1;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.hero {
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    gap: 4rem;
+    margin-inline: 2rem;
+    flex-direction: row-reverse;
+}
+
+.hero-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.hero-image > img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.hero-text {
+    flex: 2;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.logo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    flex: 2;
+}
+
+.logo-spacer {
+    margin-inline: 2rem;
+    gap: 4rem;
+}
+
+.nav {
+    background-color: #186c8d;
+    position: absolute;
+    height: 68px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.subhead {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
+/* Container Utility Class + Desktop-First Breakpoints */
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .headline {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .headline {
+    font-size: 4rem;
+  }
+  .hero {
+    margin-inline: 0;
+  }
+  .hero-image {
+    display: none;
+  }
+  .logo-spacer {
+    margin-left: 0;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  .headline {
+    font-size: 3.6rem;
+    margin-bottom: 1.25rem;
+  }
+  .subhead,
+  .cta {
+    margin-inline: 0;
+  }
+  .hero {
+    margin-top: 3rem;
+  }
+}
+
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 95%;
+  }
+}
 
 /* Import Font */
 
@@ -173,6 +357,7 @@
   }
   .hero {
     margin-top: 3rem;
+    margin-bottom: 200px;
   }
 }
 
